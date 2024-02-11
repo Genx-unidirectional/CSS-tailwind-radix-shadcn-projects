@@ -1,0 +1,66 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    color: black;
+    background-color: #ffffff;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+header, footer{
+    background-color: antiquewhite;
+    text-align: center;
+    position: sticky;
+    padding: 1rem;
+    z-index: 2;
+}
+
+header{
+    top: 0px;
+}
+footer{
+    bottom: 0px;
+}
+
+main{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    flex-grow: 1;
+}
+
+article{
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    color: white;
+}
+
+
+.card1{
+    /* background-color: red; */
+    background-color: rgb(red, green, blue);
+    background-color: hsla(233, 100%, 70%, 1);
+    /* background: rgba(red, green, blue, alpha);
+    background-color: #ff0000; */
+}
+.card2{
+    /* background-color: blue; */
+    background-color: rgb(red, green, blue);
+    background-color: hsla(hue, saturation, lightness, alpha);
+    background: rgba(red, green, blue, alpha);
+    background-color: #00ff00;
+}
+.card3{
+    /* background-color: yellow; */
+    background-color: rgb(red, green, blue);
+    background-color: hsla(hue, saturation, lightness, alpha);
+    background: rgba(red, green, blue, alpha);
+    background-color: #0000ff;
+}
