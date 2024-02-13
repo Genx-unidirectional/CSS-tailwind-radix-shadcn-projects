@@ -1,0 +1,75 @@
+/* Task --> Make the text and image in section responsive in all viewports */
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/* setting default for image */
+img{
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius:0.5rem ;
+}
+
+body{
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+section{
+    padding: 1em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: aqua;
+}
+article{
+display: flex;
+flex-flow: column;
+align-items: center;
+height: 80%;
+}
+
+section article h1{
+    font-size: clamp(1.5rem,1.5rem + 2vw,3rem);
+font-weight: bold;
+margin-bottom: 2rem;
+
+}
+
+article p {
+    font-size: clamp(1rem,1rem + 1vw,1.5rem);
+    text-align: center;
+    font-weight: 400;
+    line-height: 2rem;
+}
+
+@media screen and (min-width:680px){
+    section{
+        flex-flow: row;
+        justify-content: space-between;
+    }
+    article{
+        align-items: flex-start;
+
+        width: calc( 50% - 1rem);
+
+    }
+    h1{
+        text-wrap: nowrap;
+    }
+    article p{
+        text-align: left;
+    }
+    img{
+        width: calc( 50% - 1rem);
+        
+    }
+}
